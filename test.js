@@ -9,6 +9,8 @@ commander.on("update", (players) => {
         player.turn(0.05);
         player.move(-50, 50);
         player.fire();
+
+        //console.log(player.detected_enemies.length)
     });
 });
 
