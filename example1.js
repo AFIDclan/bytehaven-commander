@@ -1,6 +1,6 @@
 const { Commander } = require("./index.js");
 
-let commander = new Commander("zoxks" + Math.floor(Math.random() * 1000));
+let commander = new Commander("example1-" + Math.floor(Math.random() * 1000));
 commander.connect({address: "localhost", port: 1346});
 
 
