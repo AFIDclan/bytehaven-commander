@@ -16,6 +16,7 @@ commander.on("update", (players) => {
 
             let enemy = player.detected_enemies[0];
             player_aim_at(player, enemy.pose);
+            player.move(0, 0);
             player.fire();
         
         } else {
