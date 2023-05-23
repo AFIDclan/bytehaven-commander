@@ -78,8 +78,10 @@ class MyTeam {
         
 
         const acceleration = {
-            x: cohesionWeight * cohesionVector.x + alignmentWeight * alignmentVector.x + separationWeight * separationVector.x,
-            y: cohesionWeight * cohesionVector.y + alignmentWeight * alignmentVector.y + separationWeight * separationVector.y
+            // x: cohesionWeight * cohesionVector.x + alignmentWeight * alignmentVector.x + separationWeight * separationVector.x,
+            // y: cohesionWeight * cohesionVector.y + alignmentWeight * alignmentVector.y + separationWeight * separationVector.y
+            x: alignmentWeight * alignmentVector.x,
+            y: alignmentWeight * alignmentVector.y
         };
     
         const accelerationMagnitude = Math.sqrt(Math.pow(acceleration.x, 2) + Math.pow(acceleration.y, 2));

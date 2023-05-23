@@ -21,6 +21,16 @@ class Player {
     {
         this.commander.pending_commands.push(new Command(this.id, "turn", {angle}));
     }
+
+    activate_shield()
+    {
+        this.commander.pending_commands.push(new Command(this.id, "activate_shield", {}));
+    }
+
+    deactivate_shield()
+    {
+        this.commander.pending_commands.push(new Command(this.id, "deactivate_shield", {}));
+    }
 }
 
 module.exports = Player;
